@@ -6,11 +6,14 @@ namespace hackerrank
     {
         static void Main(string[] args)
         {
+            Staircase sc = new Staircase();
+            sc.BuildStaircase();
+
+            // PlusMinus pm = new PlusMinus();
+            // pm.CalculateFractions();
+
             // DiagonalDifference dd = new DiagonalDifference();
             // dd.CalculateDiagonalDifference();
-
-            PlusMinus pm = new PlusMinus();
-            pm.CalculateFractions();
         }
     }
 }
