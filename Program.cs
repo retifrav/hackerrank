@@ -6,8 +6,11 @@ namespace hackerrank
     {
         static void Main(string[] args)
         {
-            //DiagonalDifference dd = new DiagonalDifference();
-            //dd.CalculateDiagonalDifference();
+            // DiagonalDifference dd = new DiagonalDifference();
+            // dd.CalculateDiagonalDifference();
+
+            PlusMinus pm = new PlusMinus();
+            pm.CalculateFractions();
         }
     }
 }
