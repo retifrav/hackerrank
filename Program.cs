@@ -6,12 +6,15 @@ namespace hackerrank
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"[{DateTime.Now.ToString()}]: Start\n---");
+            Console.WriteLine($"[{DateTime.Now.ToString()}]: Start\n---\n");
 
-            MiniMaxSum mms = new MiniMaxSum();
-            mms.Solve();
+            BirthdayCakeCandles bcc = new BirthdayCakeCandles();
+            bcc.Solve();
             
-            Console.WriteLine($"---\n[{DateTime.Now.ToString()}]: Finish");
+            Console.WriteLine($"\n---\n[{DateTime.Now.ToString()}]: Finish");
+
+            // MiniMaxSum mms = new MiniMaxSum();
+            // mms.Solve();
 
             // Staircase sc = new Staircase();
             // sc.BuildStaircase();
