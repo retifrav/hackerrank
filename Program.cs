@@ -8,10 +8,13 @@ namespace hackerrank
         {
             Console.WriteLine($"[{DateTime.Now.ToString()}]: Start\n---\n");
 
-            BirthdayCakeCandles bcc = new BirthdayCakeCandles();
-            bcc.Solve();
+            TimeConversion tc = new TimeConversion();
+            tc.Solve();
             
             Console.WriteLine($"\n---\n[{DateTime.Now.ToString()}]: Finish");
+
+            // BirthdayCakeCandles bcc = new BirthdayCakeCandles();
+            // bcc.Solve();
 
             // MiniMaxSum mms = new MiniMaxSum();
             // mms.Solve();
