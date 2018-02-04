@@ -32,7 +32,7 @@ namespace hackerrank
             Console.WriteLine($"Now enter {n} lines with {n} integers in each (N x N matrix): ");
             for (int line = 0; line < n; line++)
             {
-                arrayTemp = ParseStringToArray(n, Console.ReadLine());
+                arrayTemp = Common.ParseStringToArray(n, Console.ReadLine());
                 for (int column = 0; column < n; column++)
                 {
                     array[line, column] = arrayTemp[column];
@@ -60,17 +60,6 @@ namespace hackerrank
                 //Console.WriteLine("- - -");
             }
             Console.WriteLine($"DiagonalDifference: {Math.Abs(diagPrimary - diagSecondary)}");
-        }
-
-        public int[] ParseStringToArray(int n, string str)
-        {
-            int[] arrayInt = new int[n];
-            string[] arrayStr = str.Split(' ');
-            for (int i = 0; i < n; i++)
-            {
-                arrayInt[i] = Convert.ToInt32(arrayStr[i]);
-            }
-            return arrayInt;
         }
     }
 }

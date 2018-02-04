@@ -29,7 +29,7 @@ namespace hackerrank
             }
 
             Console.WriteLine($"Now enter {n} integers separated by space: ");
-            int[] array = ParseStringToArray(n, Console.ReadLine());
+            int[] array = Common.ParseStringToArray(n, Console.ReadLine());
             #endregion
 
             int indexOfMax = IndexOfMax(array),
@@ -45,17 +45,6 @@ namespace hackerrank
             }
 
             Console.WriteLine($"Sum of min: {sumOfMin}, sum of max: {sumOfMax}");
-        }
-
-        int[] ParseStringToArray(int n, string str)
-        {
-            int[] arrayInt = new int[n];
-            string[] arrayStr = str.Split(' ');
-            for (int i = 0; i < n; i++)
-            {
-                arrayInt[i] = Convert.ToInt32(arrayStr[i]);
-            }
-            return arrayInt;
         }
 
         int IndexOfMax(int[] arr)

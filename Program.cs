@@ -8,10 +8,13 @@ namespace hackerrank
         {
             Console.WriteLine($"[{DateTime.Now.ToString()}]: Start\n---\n");
 
-            GradingStudents problem = new GradingStudents();
+            Kangaroo problem = new Kangaroo();
             problem.Solve();
             
             Console.WriteLine($"\n---\n[{DateTime.Now.ToString()}]: Finish");
+
+            // GradingStudents problem = new GradingStudents();
+            // problem.Solve();
 
             // TimeConversion tc = new TimeConversion();
             // tc.Solve();
