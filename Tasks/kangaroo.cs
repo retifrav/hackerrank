@@ -57,7 +57,6 @@ namespace hackerrank
 
                     // now we're talking
                     bool thereIsStillChance = true;
-
                     long progress1 = start1,
                          progress2 = start2,
                          diff = Math.Abs(progress1 - progress2),
